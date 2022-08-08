@@ -34,7 +34,7 @@ def health_insurance_predict():
         df3 = pipeline.data_preparation( df2 )
 
         # prediction
-        df_response = pipeline.get_predict( model, test_raw, df3 )
+        df_response = pipeline.get_prediction( model, test_raw, df3 )
 
         return df_response
 
@@ -43,4 +43,4 @@ def health_insurance_predict():
 
 if __name__ == '__main__':
     port = os.environ.get( 'PORT', 5000 )
-    app.run( '0.0.0.0', port=port )
+    app.run( '0.0.0.0', port=port, debug=True )

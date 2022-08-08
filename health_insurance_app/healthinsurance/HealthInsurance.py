@@ -65,12 +65,13 @@ class HealthInsurance(object):
 
 
     def get_prediction( self, model, original_data, test_data ):
+        
         # model prediction
         pred = model.predict_proba( test_data )
 
         # join prediction into original data
         original_data['score'] = pred[:, 1].tolist()
 
-        return original_data.to_json( orient='records', data_format='iso' )
+        return original_data.to_json( orient='records' )
 
         
