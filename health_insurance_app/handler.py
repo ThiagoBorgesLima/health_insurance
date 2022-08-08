@@ -2,7 +2,7 @@ import os
 import pickle
 import pandas as pd
 from flask import Flask, request, Response
-from healthinsurance import HealthInsurance
+from healthinsurance.HealthInsurance import HealthInsurance
 
 # loading model
 model = pickle.load( open( 'models/model_linear_regression.pkl', 'rb' ) )
