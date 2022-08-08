@@ -24,18 +24,18 @@ class HealthInsurance(object):
         
         return df1
    
-    def feature_engineering( df2 ):
+    def feature_engineering( self, df2 ):
                 
         # vehicle age
-        df2['vehicle_age'] = df2['vehicle_age'].apply( lambda x: 'over_2_years' if x == '> 2 Years' else 'between_1_2_year' 
-                                                                                if x == '1-2 Year' else 'below_1_year' )
+        df2['vehicle_age'] = df2['vehicle_age'].apply( lambda x: 'over_2_years' if x == '> 2 Years' else 'between_1_2_year' if x == '1-2 Year' else 'below_1_year' )
+        
         # vehicle damage                                                                     
         df2['vehicle_damage'] = df2['vehicle_damage'].apply( lambda x: 1 if x == 'Yes' else 0 )        
 
         return df2
 
 
-    def data_preparation( df5 ):
+    def data_preparation( self, df5 ):
 
         # annual_premium - StandardScaler
         df5['annual_premium'] = self.annual_premium_scaler.transform( df5[['annual_premium']].values ) 
