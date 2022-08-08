@@ -2,7 +2,7 @@ import pickle
 import numpy as np
 import pandas as pd
 
-class HealthInsurance():
+class HealthInsurance(object):
 
     def __init__( self ):
         self.home_path = ''
@@ -72,3 +72,5 @@ class HealthInsurance():
         original_data['score'] = pred[:, 1].tolist()
 
         return original_data.to_json( orient='records', data_format='iso' )
+
+        
