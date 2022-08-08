@@ -2,7 +2,7 @@ import pickle
 import numpy as np
 import pandas as pd
 
-class HealthInsurance( object ):
+class HealthInsurance():
 
     def __init__( self ):
         self.home_path = ''
