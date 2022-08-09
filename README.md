@@ -142,6 +142,7 @@ I made this classification with the **ExtraTreesClassifier** method.
 <img src="https://github.com/ThiagoBorgesLima/health_insurance/blob/master/references/knn_cumulative_a.png" width="900" height="475"><br>
 
 
+
 **Calls(20000) / Customers(72000) = 27%** ( RED LINE )
 
 A: The percentage of intrested costumers will reach 70% by making 20.000 calls
@@ -167,6 +168,15 @@ A: To reach 80% the sales team will have to make 25000 calls
 # 8. Conclusions
 
 A classification model can help a lot to gain precision to sell something to someone who has interest. This model can prove that you can achieve 80% of interested people in a database with only 25000 calls, so this company can increase the gains with this kind of economy.
+
+### The graphic shows how many times the classification model is better than the normal model ( aleatory ) :
+
+
+<img src="https://github.com/ThiagoBorgesLima/health_insurance/blob/master/references/lift_a.png" width="900" height="475"><br>
+
+
+
+
 I can put this model in many places to work, like sheets.
 You can use this model with a Google Sheets to gain speed with this analysis for example, it is a simple way to use:
 
