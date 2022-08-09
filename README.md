@@ -1,3 +1,6 @@
+<img src="https://github.com/ThiagoBorgesLima/health_insurance" width="900" height="475"><br>
+
+
 # Health Insurance
 
 ## PA04 - Health Insurance
