@@ -148,13 +148,39 @@ A: The percentage of intrested costumers will reach 90% by making 40.000 calls
 A: To reach 80% the sales team will have to make 25000 calls
 
 
-
 # 8. Conclusions
 
-# 9. Lessons Learned
+A classification model can help a lot to gain precision to sell something to someone who has interest. This model can prove that you can achieve 80% of interested people in a database with only 25000 calls, so this company can increase the gains with this kind of economy.
+I can put this model in many places to work, like sheets.
+You can use this model with a Google Sheets to gain speed with this analysis for example, it is a simple way to use:
 
-# 10. Next Steps to Improve
+<img src="https://github.com/ThiagoBorgesLima/health_insurance/blob/master/references/google_sheet_a.png" width="900" height="475"><br>
 
-# LICENSE
 
-# All Rights Reserved - Comunidade DS 2022
+Using this Propensity Score option you can Score your database, based on this classification model at :
+
+https://health-insurance-prediction-t.herokuapp.com/
+
+
+
+# 9. Next Steps to Improve
+
+Start a second cycle to analyze the problem, seeking different approaches, especially considering to balance this dataset.
+
+Possible points to be addressed in the second cycle:
+
+-**Work with new combinations of features**
+
+-**Balance the dataset**
+
+-**Create a logic inside google script to re-order my table when get the score, ordering it ascendant**
+
+-**Try new models after balance**
+
+-**Work with a more robust method to find the best Hyper parameters for the model**
+
+# Author
+
+Thiago Borges Lima
+
+
