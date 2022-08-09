@@ -5,7 +5,7 @@
 
 # Health Insurance All Company
 
-This repository contains all steps based on CRISP-DS process model methodology to build a prediction for classificatioon model for a large insurance company, where they need to select determinated people to contact and sell a auto insurance from a database that they already have clients with health insurance. The data used in this model is available at the [Rossmann Store Sales competition page ate Kaggle.](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction)
+This repository contains all steps based on CRISP-DS process model methodology to build a prediction for classification model for a large insurance company, where they need to select determinated people to contact and sell a auto insurance from a database that they already have clients with health insurance. The data used in this model is available at the [Rossmann Store Sales competition page ate Kaggle.](https://www.kaggle.com/datasets/anmolkumar/health-insurance-cross-sell-prediction)
 
 All information below is fictional.
 
@@ -93,10 +93,61 @@ Tests were performed using the following algorithms:
 |   Extra Trees Classifier     |       0.392151      |    0.00214   |
 |  Random Forest Classifier    |       0.470588      |    0.00257   |
 |    XGBoost Classifier        |       0.509803      |    0.00279   |
-|      KNN Classifier          |       0.431373      |    0.00236   |
+|      KNN Classifier          |       0.490196      |    0.00268   |
+
+For this project I choose **KNN Classifier** to learn how to work with the model, and this model have good metrics to continue.
+
+# 7. Business Results after KNN Classifier
+
+Now with a model built, I can answer the questions made by the working product team.
+
+## 1. The most relevant attributes of customers interested in purchasing auto insurance.
+
+|       Features       |  Importance  |  
+|:--------------------:|:------------:|
+|       Vintage        |     0.273    |
+|     Annual Premium   |     0.244    |
+|         Age          |     0.165    |
+|      Region Code     |     0.105    |
+|    Vehicle Damage    |     0.066    |
+| Policy Sales Channel |     0.059    |
+|  Previoulsy Insured  |     0.057    |
+| Vehicle Age < 1 year |     0.013    |
+
+	 
+  
+<img src="https://github.com/ThiagoBorgesLima/health_insurance/blob/master/references/features_importance.png" width="900" height="475"><br>
+
+I made this classification with the **ExtraTreesClassifier** method.
 
 
-# 7. Business Results
+## 2. What percentage of customers interested in purchasing auto insurance will the sales team be able to contact by making 20.000 calls?
+
+
+<img src="https://github.com/ThiagoBorgesLima/health_insurance/blob/master/references/knn_cumulative_a.png" width="900" height="475"><br>
+
+
+**Calls(20000) / Customers(72000) = 27%** ( RED LINE )
+
+A: The percentage of intrested costumers will reach 70% by making 20.000 calls
+
+
+## 3. And if the sales team capacity increases to 40.000 calls, what percentage of customers interested in purchasing auto insurance will the sales team be able to contact?
+
+ **Calls(40000) / Customers(72000) = 55%** ( GREEN LINE )
+ 
+A: The percentage of intrested costumers will reach 90% by making 40.000 calls
+  
+
+## 4. How many calls does the sales team need to make to contact 80% of customers interested in purchasing auto insurance?
+
+**(80%) Interested = (35%) Contact** ( BLUE LINE )
+
+**Contact(0.35) * Customers(72000) = 25000%** 
+
+A: To reach 80% the sales team will have to make 25000 calls
+
+
 
 # 8. Conclusions
 
