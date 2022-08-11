@@ -151,30 +151,56 @@ I made this classification with the **ExtraTreesClassifier** method.
 
 ## 2. What percentage of customers interested in purchasing auto insurance will the sales team be able to contact by making 20.000 calls?
 
+A: By random list:
+ - The sales team contacts 26% of those interested in car insurance: 2419 customers (see Gain: intersection red x blue line).
+ 
+ **Estimated revenue: 2451 * 31669 = $77.62M per year.**
 
-<img src="https://github.com/ThiagoBorgesLima/health_insurance/blob/master/references/xgboost.png" width="900" height="475"><br>
+By sorted list (model):
+ - The sales team contacts 71% of those interested in car insurance: 6543 customers (see Gain: intersection red x orange line).
+ 
+**Estimated revenue: 6543 * 31669 = $208.26M per year.**
 
+RESULT: The model is 2.68 times better than the random list (see Lift: intersection red x orange line). 
+**So, the estimated revenue is 2.68 times higher than the random list: $130.63M.**
 
+<img src="https://github.com/ThiagoBorgesLima/health_insurance/blob/master/references/xgboost_red.png" width="900" height="475"><br>
 
-**Calls(20000) / Customers(72000) = 27%** ( RED LINE )
-
-A: The percentage of intrested costumers will reach 70% by making 20.000 calls
 
 
 ## 3. And if the sales team capacity increases to 40.000 calls, what percentage of customers interested in purchasing auto insurance will the sales team be able to contact?
 
- **Calls(40000) / Customers(72000) = 55%** ( GREEN LINE )
+ By random list:
+ - The sales team contacts 52% of those interested in car insurance: 4838 customers (see Gain: intersection green x blue line).
  
-A: The percentage of intrested costumers will reach 90% by making 40.000 calls
+ **Estimated revenue = 4902 * 31669 = $155.24M per year.**
+
+By sorted list (model): 
+ - The sales team contacts 99.7% of those interested in car insurance: 9188 customers (see Gain: intersection green x orange line).
+ 
+ **Estimated revenue: 9291 * 31669 = $294.24M per year.**
+
+RESULT: The model is 1.9 times better than the random list (see Lift: intersection green x orange line). 
+**So the estimated revenue is 1.9 times higher than the random list: $139M.**
   
+<img src="https://github.com/ThiagoBorgesLima/health_insurance/blob/master/references/xboost_green.png" width="900" height="475"><br>
+
+
 
 ## 4. How many calls does the sales team need to make to contact 80% of customers interested in purchasing auto insurance?
 
-**(80%) Interested = (35%) Contact** ( BLUE LINE )
+By random list:
+ - The sales team needs to make 60976 calls, to contact 80% of the customers on the list, then will reach 80% of those interested in car insurance ( see Gain: intersection red x blue line).
 
-**Contact(0.35) * Customers(72000) = 25000%** 
+By sorted list (model): 
+ - The sales team needs to make 23800 calls, to contact 31% of customers on the list, then will reach 80% of those interested in car insurance ( see Gain: intersection yellow x orange line).
 
-A: To reach 80% the sales team will have to make 25000 calls
+**RESULT:** Making 23800 calls, the model is 2.56 times better than the random list (see Lift: intersection yellow x orange line).
+
+
+<img src="https://github.com/ThiagoBorgesLima/health_insurance/blob/master/references/xgboost_yellow.png" width="900" height="475"><br>
+
+
 
 
 
@@ -182,9 +208,7 @@ A: To reach 80% the sales team will have to make 25000 calls
 
 A classification model can help a lot to gain precision to sell something to someone who has interest. This model can prove that you can achieve 80% of interested people in a database with only 25000 calls, so this company can increase the gains with this kind of economy.
 
-### The graphic shows how many times the classification model is better than the normal model ( aleatory ) :
-
-
+### The graphic of Lift Curve shows how many times the classification model is better than the normal model ( aleatory ).
 
 
 
