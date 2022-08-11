@@ -153,14 +153,16 @@ I made this classification with the **ExtraTreesClassifier** method.
 
 A: By random list:
  - The sales team contacts 26% of those interested in car insurance: 2419 customers (see Gain: intersection red x blue line).
-  ==>  Estimated revenue: 2451 * 31669 = $77.62M per year.
+ 
+ **Estimated revenue: 2451 * 31669 = $77.62M per year.**
 
 By sorted list (model):
  - The sales team contacts 71% of those interested in car insurance: 6543 customers (see Gain: intersection red x orange line).
-  ==> Estimated revenue: 6543 * 31669 = $208.26M per year.
+ 
+**Estimated revenue: 6543 * 31669 = $208.26M per year.**
 
-RESULT: The model is 2.68 times better than the random list (see Lift: intersection blue x green line). 
-So, the estimated revenue is 2.68 times higher than the random list: $130.63M.
+RESULT: The model is 2.68 times better than the random list (see Lift: intersection red x orange line). 
+**So, the estimated revenue is 2.68 times higher than the random list: $130.63M.**
 
 <img src="https://github.com/ThiagoBorgesLima/health_insurance/blob/master/references/xgboost_red.png" width="900" height="475"><br>
 
@@ -170,14 +172,16 @@ So, the estimated revenue is 2.68 times higher than the random list: $130.63M.
 
  By random list:
  - The sales team contacts 52% of those interested in car insurance: 4838 customers (see Gain: intersection green x blue line).
- ==> Estimated revenue = 4902 * 31669 = $155.24M per year.
+ 
+ **Estimated revenue = 4902 * 31669 = $155.24M per year.**
 
 By sorted list (model): 
  - The sales team contacts 99.7% of those interested in car insurance: 9188 customers (see Gain: intersection green x orange line).
- ==> Estimated revenue: 9291 * 31669 = $294.24M per year.
+ 
+ **Estimated revenue: 9291 * 31669 = $294.24M per year.**
 
-RESULT: The model is 1.9 times better than the random list (see Lift: intersection blue x green line). 
-So the estimated revenue is 1.9 times higher than the random list: $139M.
+RESULT: The model is 1.9 times better than the random list (see Lift: intersection green x orange line). 
+**So the estimated revenue is 1.9 times higher than the random list: $139M.**
   
 <img src="https://github.com/ThiagoBorgesLima/health_insurance/blob/master/references/xboost_green.png" width="900" height="475"><br>
 
@@ -191,7 +195,7 @@ By random list:
 By sorted list (model): 
  - The sales team needs to make 23800 calls, to contact 31% of customers on the list, then will reach 80% of those interested in car insurance ( see Gain: intersection yellow x orange line).
 
-RESULT: Making 23800 calls, the model is 2.56 times better than the random list.
+**RESULT:** Making 23800 calls, the model is 2.56 times better than the random list (see Lift: intersection yellow x orange line).
 
 
 <img src="https://github.com/ThiagoBorgesLima/health_insurance/blob/master/references/xgboost_yellow.png" width="900" height="475"><br>
