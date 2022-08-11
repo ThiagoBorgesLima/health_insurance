@@ -99,15 +99,28 @@ Tests were performed using the following algorithms:
 
 # 6. Machine Learning Model Performance
 
-|          Model Name          |   Precision at k    |  Recall at k | 
-|:----------------------------:|:-------------------:|:------------:|
-| Logist Regression Classifier |       0.176473      |    0.00096   |
-|   Extra Trees Classifier     |       0.392151      |    0.00214   |
-|  Random Forest Classifier    |       0.470588      |    0.00257   |
-|    XGBoost Classifier        |       0.509803      |    0.00279   |
-|      KNN Classifier          |       0.490196      |    0.00268   |
+## 6.1. Single Performance
 
-For this project I choose **KNN Classifier** to learn how to work with the model, and this model have good metrics to continue.
+|          Model Name          |  Precision at k  |  Recall at k | 
+|:----------------------------:|:----------------:|:------------:|
+| Logist Regression Classifier |       0.291      |     0.476    |
+|   Extra Trees Classifier     |       0.313      |     0.511    |
+|  Random Forest Classifier    |       0.319      |     0.522    |
+|    XGBoost Classifier        |       0.352      |     0.575    |
+|      KNN Classifier          |       0.320      |     0.523    |
+
+
+## 6.2. Cross Validation Performance
+
+|          Model Name          |  Precision at k  |  Recall at k | 
+|:----------------------------:|:----------------:|:------------:|
+| Logist Regression Classifier |       0.293      |     0.478    |
+|   Extra Trees Classifier     |       0.312      |     0.508    |
+|  Random Forest Classifier    |       0.320      |     0.522    |
+|    XGBoost Classifier        |       0.353      |     0.576    |
+|      KNN Classifier          |       0.318      |     0.519    |
+
+For this project I choose **XGBoost Classifier** to learn how to work with the model, and this model have good metrics to continue.
 
 
 
