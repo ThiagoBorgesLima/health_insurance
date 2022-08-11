@@ -152,7 +152,7 @@ I made this classification with the **ExtraTreesClassifier** method.
 ## 2. What percentage of customers interested in purchasing auto insurance will the sales team be able to contact by making 20.000 calls?
 
 
-<img src="https://github.com/ThiagoBorgesLima/health_insurance/blob/master/references/knn_cumulative_a.png" width="900" height="475"><br>
+<img src="https://github.com/ThiagoBorgesLima/health_insurance/blob/master/references/xgboost.png" width="900" height="475"><br>
 
 
 
@@ -184,8 +184,6 @@ A classification model can help a lot to gain precision to sell something to som
 
 ### The graphic shows how many times the classification model is better than the normal model ( aleatory ) :
 
-
-<img src="https://github.com/ThiagoBorgesLima/health_insurance/blob/master/references/lift_a.png" width="900" height="475"><br>
 
 
 
